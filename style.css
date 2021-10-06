@@ -4,13 +4,6 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
-/* body */
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: whitesmoke;
-  align-items: center;
-}
 h1,
 h2,
 h3,
@@ -18,6 +11,14 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+}
+
+/* body */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-items: center;
 }
 
 /* header */
@@ -31,14 +32,14 @@ header {
 }
 
 .basicInfo h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 20px;
   letter-spacing: 3px;
   font-weight: 700;
 }
 
 .basicInfo h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 20px;
   letter-spacing: 3px;
 }
@@ -47,27 +48,23 @@ header {
   width: 100%;
   max-width: 600px;
   height: 600px;
-
   background: url("./avatar2.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   flex-grow: 1 0;
+  transition: all 1s;
 }
 
 /* main */
 main {
   display: flex;
   flex-wrap: wrap;
-
   width: 90%;
-
   color: rgb(35, 58, 58);
   line-height: 24px;
-
   letter-spacing: 0.5px;
   max-width: 1200px;
-  /* max-width: 800px; */
 }
 
 /* main - Containers */
@@ -79,7 +76,7 @@ main {
   padding: 10px;
 }
 .showreelContainer {
-  /* width: 600px; */
+  width: 1200px;
   padding: 10px;
 }
 .showreelContainer h2,
@@ -108,33 +105,55 @@ main {
   text-indent: 2rem;
   letter-spacing: 0.3rem;
   font-size: 1.25rem;
-  line-height: 30px;
+  line-height: 36px;
 }
 
 .abilityContainer ul,
 .workContainer ul,
 .educationContainer ul {
+  list-style-type: circle;
   padding: 0px 20px;
   letter-spacing: 0.3rem;
   font-size: 1.25rem;
-  line-height: 30px;
-  list-style-type: circle;
+  line-height: 36px;
   padding-left: 2rem;
+}
+.youtubeEmbed {
+  margin-top: 30px;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.youtubeEmbed iframe,
+.youtubeEmbed object,
+.youtubeEmbed embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.workTitle {
+  list-style-type: square;
 }
 
 /* nav */
 nav {
   display: flex;
   width: 100%;
-  background-color: powderblue;
+  background-color: rgb(211, 230, 233);
   position: sticky;
-  bottom: 0;
+  top: 0;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 nav h2 {
   padding: 30px 30px;
+  font-weight: 700;
 }
 
 nav img {
@@ -144,14 +163,20 @@ nav img {
 }
 
 nav a {
-  color: black;
+  color: cornflowerblue;
   font-size: 1.1rem;
   text-decoration: none;
   line-height: 30px;
   padding: 0px 10px;
   transition: all 0.25s;
+  font-weight: 700;
 }
 
-nav a:hover {
-  color: yellow;
+nav a:hover,
+li:hover {
+  color: coral;
+}
+
+.avatar:hover {
+  background-size: 110%;
 }
