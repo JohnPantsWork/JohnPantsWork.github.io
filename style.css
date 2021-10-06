@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+/* body */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-items: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+header.basicInfo h1 {
+  font-size: 3rem;
+  padding: 20px;
+}
+
+header.basicInfo h3 {
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+
+  background: url("./avatar.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* flex-basis: 500px; */
+  flex-grow: 1 0;
+}
+/* main */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 90%;
+
+  color: rgb(35, 58, 58);
+  line-height: 24px;
+
+  letter-spacing: 3px;
+}
+
+/* main - Containers */
+.abilityContainer,
+.workContainer,
+.educationContainer {
+  border: 3px black;
+  border-radius: 2%;
+  width: 400px;
+  padding: 10px;
+}
+
+.abilityContainer h2,
+.workContainer h2,
+.educationContainer h2 {
+  padding: 30px 0px;
+}
+
+.abilityContainer ul,
+.workContainer ul,
+.educationContainer ul {
+  padding: 0px 20px;
+}
+
+/* nav */
+nav {
+  display: flex;
+  width: 100%;
+  background-color: powderblue;
+  position: sticky;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
